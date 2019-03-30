@@ -17,7 +17,7 @@ alpha=0.001;
       t_trial=rand;
       no_iter=0;
       change = 1;
-      while no_iter<power(10,3) && change > power(10,-14)
+      while no_iter<power(10,5) && change > power(10,-14)
           loss = f(t_trial);
           update = 2*dfdt(t_trial);
           t_trial = t_trial - alpha*update;
